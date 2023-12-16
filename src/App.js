@@ -19,6 +19,7 @@ function LoadCountries(){
     .then(data => setCountries(data));
     
   },[])
+  console.log(countries);
   return(
     <div>
       <h1>All countries!!</h1>
@@ -27,4 +28,5 @@ function LoadCountries(){
   )
 }
 
+function country(props)
 export default App;
