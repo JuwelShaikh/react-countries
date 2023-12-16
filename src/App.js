@@ -19,14 +19,25 @@ function LoadCountries(){
     .then(data => setCountries(data));
     
   },[])
-  console.log(countries);
   return(
     <div>
       <h1>All countries!!</h1>
       <h3>Available countries:{countries.length}</h3>
+      {
+        countries.map(country => <Country name={country.name.common} population={country.population} capital={country.capital} ></Country>)
+      }
     </div>
   )
 }
 
-function country(props)
+function Country(props){
+  return(
+    <div className='count'>
+      <h2>Name:{props.name}</h2>
+      <h3>Capital:{props.capital}</h3>
+      <p>Population:{props.population}</p>
+    </div>
+  )
+}
+
 export default App;
