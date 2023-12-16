@@ -1,20 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <loadCountries></loadCountries>
+      <LoadCountries></LoadCountries>
     </div>
   );
 }
 
-function loadCountries(){
-  const [] = useState([]);
+function LoadCountries(){
+  const [countries, setCountries] = useState([]);
   return(
     <div>
-      <h3>All countries!!</h3>
+      <h1>All countries!!</h1>
     </div>
   )
 }
