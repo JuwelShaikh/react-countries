@@ -22,7 +22,7 @@ function LoadCountries(){
   return(
     <div>
       <h1>All countries!!</h1>
-      <h3>Available countries:</h3>
+      <h3>Available countries:{countries.length}</h3>
     </div>
   )
 }
