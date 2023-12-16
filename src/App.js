@@ -3,7 +3,6 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [] = useState([]);
   return (
     <div className="App">
       <loadCountries></loadCountries>
@@ -12,6 +11,7 @@ function App() {
 }
 
 function loadCountries(){
+  const [] = useState([]);
   return(
     <div>
       <h3>All countries!!</h3>
