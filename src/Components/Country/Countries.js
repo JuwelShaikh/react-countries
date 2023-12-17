@@ -21,12 +21,13 @@ const Countries = () => {
 };
 
 const InfoCountry = props => {
+    const {name, capital, population} = props.country;
     return(
         <div className='counDiv'>
             <div>
-            <h3>Name: {props.name}</h3>
-            <h4>Capital: {props.country.capital}</h4>
-            <p>Population: <b>{props.country.population}</b></p>
+            <h3>Name: {name}</h3>
+            <h4>Capital: {capital}</h4>
+            <p>Population: <b>{population}</b></p>
             </div>
         </div>
     )
