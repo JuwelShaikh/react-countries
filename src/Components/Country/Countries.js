@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './country.css'
 
 const Countries = () => {
     const [country, setCountry] = useState([])
@@ -21,10 +22,12 @@ const Countries = () => {
 
 const InfoCountry = props => {
     return(
-        <div style={{backgroundColor:'Tomato', width:'max-content', padding:'4px', margin:'5px'}}>
+        <div className='counDiv'>
+            <div>
             <h3>Name: {props.name}</h3>
             <h4>Capital: {props.capital}</h4>
             <p>Population: <b>{props.population}</b></p>
+            </div>
         </div>
     )
 } 

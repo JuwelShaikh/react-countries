@@ -1,0 +1,8 @@
+.counDiv{
+    width: 220px;
+    padding: 2px;
+    margin: 5px;
+    border: 1px dashed black;
+    border-radius: 5px;
+    background-color: rgba(127, 255, 212, 0.565);
+}
